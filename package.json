@@ -55,7 +55,7 @@
     "body-parser": "^1.18.2",
     "chai": "^4.3.0",
     "cross-env": "^7.0.3",
-    "eslint": "^7.19.0",
+    "eslint": "^8.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",
