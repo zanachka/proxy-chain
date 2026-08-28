@@ -79,8 +79,8 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1
       proxy:
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^4.1.0
+        version: 4.1.0
       puppeteer:
         specifier: ^25.1.0
         version: 25.1.0
@@ -721,8 +721,8 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
-  args@5.0.1:
-    resolution: {integrity: sha512-1kqmFCFsPffavQFGt8OxJdIcETti99kySRUPMpOhaGjL6mRJn8HFU1OxKY5bMqfZKUwTQc1mZkAjmGYaVOHFtQ==}
+  args@5.0.3:
+    resolution: {integrity: sha512-h6k/zfFgusnv3i5TU08KQkVKuCPBtL/PWQbWkHUxvJrZ2nAyeaUupneemcrgn1xmqxPQsPIzwkUhOpoqPDRZuA==}
     engines: {node: '>= 6.0.0'}
 
   array-buffer-byte-length@1.0.2:
@@ -1960,6 +1960,10 @@ packages:
     resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
     engines: {node: '>=12'}
 
+  picomatch@4.0.7:
+    resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
+    engines: {node: '>=12'}
+
   portastic@1.0.1:
     resolution: {integrity: sha512-RIqfFvS85oof66B06xxT37dxdeHt1HnwvEn+HZ84+H+D6ZEMO02Alj8NQcASBfAAuVuy7YMQwa3KVI1a8YJCYg==}
     hasBin: true
@@ -1980,8 +1984,9 @@ packages:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
     engines: {node: '>= 0.10'}
 
-  proxy@1.0.2:
-    resolution: {integrity: sha512-KNac2ueWRpjbUh77OAFPZuNdfEqNynm9DD4xHT14CccGpW8wKZwEkN0yjlb7X9G9Z9F55N0Q+1z+WfgAhwYdzQ==}
+  proxy@4.1.0:
+    resolution: {integrity: sha512-X3gqRNkp5dLWQolWksIfFSltI0ls8oQ01+tckxnPoz3bQ5+OUsdE7bwX/i/Q3TDEG4gx2PQjc3D07dIx90CQdg==}
+    engines: {node: '>= 20'}
     hasBin: true
 
   psl@1.15.0:
@@ -3056,7 +3061,7 @@ snapshots:
 
   argparse@2.0.1: {}
 
-  args@5.0.1:
+  args@5.0.3:
     dependencies:
       camelcase: 5.0.0
       chalk: 2.4.2
@@ -4397,6 +4402,8 @@ snapshots:
 
   picomatch@4.0.5: {}
 
+  picomatch@4.0.7: {}
+
   portastic@1.0.1:
     dependencies:
       bluebird: 2.11.0
@@ -4420,10 +4427,9 @@ snapshots:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
 
-  proxy@1.0.2:
+  proxy@4.1.0:
     dependencies:
-      args: 5.0.1
-      basic-auth-parser: 0.0.2
+      args: 5.0.3
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
@@ -4919,7 +4925,7 @@ snapshots:
   vite@8.2.2(@types/node@20.19.41)(esbuild@0.28.0)(tsx@4.22.2):
     dependencies:
       lightningcss: 1.33.0
-      picomatch: 4.0.5
+      picomatch: 4.0.7
       postcss: 8.5.26
       rolldown: 1.2.5
       tinyglobby: 0.2.17
